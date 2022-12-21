@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBAD4081-B541-44A2-B8B1-550D36B4426E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Practice</RootNamespace>
+    <AssemblyName>Practice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CRM.Designer.cs">
+      <DependentUpon>CRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CRM_Add.Designer.cs">
+      <DependentUpon>CRM_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Autocs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CRM_Autocs.Designer.cs">
+      <DependentUpon>CRM_Autocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CRM_Info.Designer.cs">
+      <DependentUpon>CRM_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info_abonent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Info_abonent.Designer.cs">
+      <DependentUpon>Info_abonent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicsExtension.cs" />
+    <Compile Include="Panel_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_menu.Designer.cs">
+      <DependentUpon>Panel_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_menu_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel_menu_.Designer.cs">
+      <DependentUpon>Panel_menu_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="Abonent_THC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Abonent_THC.Designer.cs">
+      <DependentUpon>Abonent_THC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Working_with_subscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Working_with_subscribers.Designer.cs">
+      <DependentUpon>Working_with_subscribers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRM.resx">
+      <DependentUpon>CRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRM_Add.resx">
+      <DependentUpon>CRM_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRM_Autocs.resx">
+      <DependentUpon>CRM_Autocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRM_Info.resx">
+      <DependentUpon>CRM_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info_abonent.resx">
+      <DependentUpon>Info_abonent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_menu.resx">
+      <DependentUpon>Panel_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_menu_.resx">
+      <DependentUpon>Panel_menu_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abonent_THC.resx">
+      <DependentUpon>Abonent_THC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Working_with_subscribers.resx">
+      <DependentUpon>Working_with_subscribers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
