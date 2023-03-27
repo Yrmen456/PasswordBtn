@@ -14,7 +14,7 @@ namespace Practice
     {
         public CRM()
         {
-            InitializeComponent();//
+            InitializeComponent();//asdsad
         }
 
         private void button3_Click(object sender, EventArgs e)
